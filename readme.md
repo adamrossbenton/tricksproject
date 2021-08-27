@@ -8,7 +8,8 @@ This is a MtG pack-opening simulator that utilizes a comprehensive card database
 
 FEATURES:
 
-"Get Pack" button, generates 15 MtG cards at random Hover over each card to get details (mana cost, abilities, power/toughness, etc.) 
+"Get Pack" button, generates 15 MtG cards at random
+Hover over each card to get details (mana cost, abilities, power/toughness, etc.) 
 
 COMING SOON:
 Add newly acquired cards to your library to save them for later--maybe show them off to your friends!
