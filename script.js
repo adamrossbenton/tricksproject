@@ -13,11 +13,11 @@ const $image = $('#image')
 const $getPack = $('.get-pack')
 const card = $('.card')
 
-let cardDatabase
+let cardData
 
 const render = () => {
-    console.log(cardDatabase)
-    card.text(cardDatabase.cards[0].name)
+    console.log(cardData)
+    card.text(cardData.cards[0].name)
 }
 
 function handleGetData(event){
@@ -27,8 +27,8 @@ function handleGetData(event){
         url: "https://api.magicthegathering.io/v1/cards"
     }).then(
         data => {
-            cardDatabase = data;
-            render();
+            cardData = data;
+            console.log(cardData);
         },
         error => {
             console.log("Something broke",error)
@@ -36,4 +36,4 @@ function handleGetData(event){
     )
 }
 
-$getPack.on('click',handleGetData)
+$('button').on('click',handleGetData)
