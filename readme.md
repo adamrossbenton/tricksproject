@@ -11,7 +11,7 @@ FEATURES:
 
 "Get Pack" button, generates 15 MtG cards at random
 
-Currently jumps to a random page of API, from 1 to 612, then pulls 15 cards at random from one of the 100 cards on that page
+(Currently jumps to a random page of API, from 1 to 612, then pulls 15 cards at random from one of the 100 cards on that page)
 
 COMING SOON:
 
