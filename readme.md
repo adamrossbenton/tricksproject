@@ -11,7 +11,11 @@ FEATURES:
 
 "Get Pack" button, generates 15 MtG cards at random
 
+    Currently jumps to a random page of API, from 1 to 612, then pulls 15 cards at random from one of the 100 cards on that page
+
 COMING SOON:
+
+More powerful randomization, each card should be from a randomly-generated page as opposed to all 15 cards from the same page (initially generated at random)
 
 Hover over each card to get details (mana cost, abilities, power/toughness, etc.) 
 
