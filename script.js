@@ -14,7 +14,6 @@ const $pack = $('#pack')
 const card = $('.card')
 
 let cardData
-let rando = Math.floor(Math.random()*100)
 
 const render = () => {
     console.log(cardData)
@@ -30,7 +29,7 @@ function handleGetData(){
         data => {
             cardData = data;
             for (let i = 0; i < 15; i++) {
-                console.log(cardData.cards[rando]);
+                console.log(cardData.cards[Math.floor(Math.random()*100)]);
             }
         },
         error => {
