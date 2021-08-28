@@ -10,7 +10,7 @@ const $text = $('#text')
 const $power = $('#power')
 const $toughness = $('#toughness')
 const $image = $('#image')
-const $pack = $('input[type="submit"]')
+const $pack = $('#pack')
 const card = $('.card')
 
 let cardData
@@ -36,4 +36,4 @@ function handleGetData(event){
     )
 }
 
-$('button').on('click',handleGetData)
+$pack.on('click',function() {console.log("click works")})
