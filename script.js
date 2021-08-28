@@ -16,7 +16,10 @@ let cardData
 const render = () => {
     for (let i = 0; i < 15; i++) {
         let rando = cardData.cards[Math.floor(Math.random()*100)]
+        console.log(rando)
+        console.log(`${rando.imageUrl}`)
         $(`#${i+1}`).text(rando.name)
+        $(`#img${i+1}`).attr("src",rando.imageUrl)
     }
 }
 
