@@ -1,0 +1,9 @@
+body {
+    background-color: orange
+}
+
+/* For Tablet */
+@media screen and (min-width: 480px) {}
+
+/* For Desktop */
+@media screen and (min-width: 769px) {}
