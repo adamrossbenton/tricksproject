@@ -10,7 +10,6 @@ const $text = $('#text')
 const $power = $('#power')
 const $toughness = $('#toughness')
 const $image = $('#image')
-const $pack = $('#pack')
 const card = $('.card')
 
 let cardData
@@ -18,7 +17,6 @@ let cardData
 const render = () => {
     for (let i = 0; i < 15; i++) {
         let rando = cardData.cards[Math.floor(Math.random()*100)]
-        console.log(rando.name);
         $(`#${i+1}`).text(rando.name)
     }
 }
@@ -41,4 +39,4 @@ function handleGetData(event){
 
 // handleGetData()
 
-$pack.on('click',handleGetData)
+$('form').on('submit',handleGetData)
