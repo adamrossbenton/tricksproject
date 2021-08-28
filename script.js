@@ -20,15 +20,15 @@ const render = () => {
     card.text(cardData.cards[0].name)
 }
 
-function handleGetData(event){
-    event.preventDefault();
+function handleGetData(){
+    // event.preventDefault();
 
     $.ajax({
         url: "https://api.magicthegathering.io/v1/cards"
     }).then(
         data => {
             cardData = data;
-            console.log(cardData);
+            console.log(cardData.cards[0]);
         },
         error => {
             console.log("Something broke",error)
@@ -36,4 +36,6 @@ function handleGetData(event){
     )
 }
 
-$pack.on('click',function() {console.log("click works")})
+handleGetData()
+
+// $pack.on('click',function() {console.log("click works")})
