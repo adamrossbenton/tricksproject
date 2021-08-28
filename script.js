@@ -1,4 +1,5 @@
 // API: https://api.magicthegathering.io/v1/cards
+// Total pages: 612
 
 const $name = $('#name')
 const $manaCost = $('#mana-cost')
@@ -12,14 +13,17 @@ const $toughness = $('#toughness')
 const $image = $('#image')
 
 let cardData
+let randPage
+let randCard
 
 const render = () => {
     for (let i = 0; i < 15; i++) {
-        let rando = cardData.cards[Math.floor(Math.random()*100)]
-        console.log(rando)
-        console.log(`${rando.imageUrl}`)
-        $(`#${i+1}`).text(rando.name)
-        $(`#img${i+1}`).attr("src",rando.imageUrl)
+        randPage = Math.floor((Math.random()*612)+1)
+        randCard = cardData.cards[Math.floor(Math.random()*100)]
+        // console.log(randCard)
+        console.log(`${cardData}`)
+        $(`#${i+1}`).text(randCard.name)
+        $(`#img${i+1}`).attr("src",randCard.imageUrl)
     }
 }
 
@@ -27,7 +31,7 @@ function handleGetData(){
     // event.preventDefault();
 
     $.ajax({
-        url: "https://api.magicthegathering.io/v1/cards"
+        url: `https://api.magicthegathering.io/v1/cards?page=$(randPage)`
     }).then(
         data => {
             cardData = data;
