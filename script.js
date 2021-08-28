@@ -26,8 +26,8 @@ const render = () => {
     }
 }
 
-function handleGetData(){
-    // event.preventDefault();
+function handleGetData(event){
+    event.preventDefault();
     randPage = Math.floor((Math.random()*612)+1)
     console.log(randPage)
     $.ajax({
@@ -43,6 +43,6 @@ function handleGetData(){
     )
 }
 
-handleGetData()
+// handleGetData()
 
-// $('form').on('submit',handleGetData)
+$('form').on('submit',handleGetData)
