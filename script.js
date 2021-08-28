@@ -18,9 +18,9 @@ let randCard
 
 const render = () => {
     for (let i = 0; i < 15; i++) {
-        // randPage = Math.floor((Math.random()*612)+1)
         randCard = cardData.cards[Math.floor(Math.random()*100)]
-        console.log(randCard.imageUrl)
+        // console.log(cardData.cards[0].name)
+        // console.log(randCard.name)
         $(`#${i+1}`).text(randCard.name)
         $(`#img${i+1}`).attr("src",randCard.imageUrl)
     }
