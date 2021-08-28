@@ -14,6 +14,7 @@ const $pack = $('#pack')
 const card = $('.card')
 
 let cardData
+let rando = Math.floor(Math.random()*100)
 
 const render = () => {
     console.log(cardData)
@@ -28,7 +29,9 @@ function handleGetData(){
     }).then(
         data => {
             cardData = data;
-            console.log(cardData.cards[0]);
+            for (let i = 0; i < 15; i++) {
+                console.log(cardData.cards[rando]);
+            }
         },
         error => {
             console.log("Something broke",error)
