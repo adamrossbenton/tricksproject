@@ -16,8 +16,9 @@ const card = $('.card')
 let cardData
 
 const render = () => {
-    console.log(cardData)
-    card.text(cardData.cards[0].name)
+    for (let i = 0; i < 15; i++) {
+        console.log(cardData.cards[Math.floor(Math.random()*100)]);
+    }
 }
 
 function handleGetData(){
@@ -28,9 +29,7 @@ function handleGetData(){
     }).then(
         data => {
             cardData = data;
-            for (let i = 0; i < 15; i++) {
-                console.log(cardData.cards[Math.floor(Math.random()*100)]);
-            }
+            render();
         },
         error => {
             console.log("Something broke",error)
