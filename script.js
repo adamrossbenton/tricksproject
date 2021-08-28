@@ -20,8 +20,8 @@ const render = () => {
     }
 }
 
-function handleGetData(event){
-    event.preventDefault();
+function handleGetData(){
+    // event.preventDefault();
 
     $.ajax({
         url: "https://api.magicthegathering.io/v1/cards"
@@ -36,6 +36,6 @@ function handleGetData(event){
     )
 }
 
-// handleGetData()
+handleGetData()
 
-$('form').on('submit',handleGetData)
+// $('form').on('submit',handleGetData)
