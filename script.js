@@ -10,7 +10,6 @@ const $text = $('#text')
 const $power = $('#power')
 const $toughness = $('#toughness')
 const $image = $('#image')
-const card = $('.card')
 
 let cardData
 
