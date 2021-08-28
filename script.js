@@ -10,7 +10,7 @@ const $text = $('#text')
 const $power = $('#power')
 const $toughness = $('#toughness')
 const $image = $('#image')
-const $getPack = $('.get-pack')
+const $pack = $('input[type="submit"]')
 const card = $('.card')
 
 let cardData
