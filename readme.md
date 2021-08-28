@@ -15,8 +15,6 @@ FEATURES:
 
 COMING SOON:
 
-More powerful randomization, each card should be from a randomly-generated page as opposed to all 15 cards from the same page (initially generated at random)
-
 Hover over each card to get details (mana cost, abilities, power/toughness, etc.) 
 
 Add newly acquired cards to your library to save them for later--maybe show them off to your friends!
