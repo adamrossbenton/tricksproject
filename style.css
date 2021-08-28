@@ -1,9 +1,26 @@
 body {
-    background-color: orange
+    display: inline-block;
+    text-align: center;
+}
+
+#all-cards {
+    width: 400px;
+    text-align: center;
 }
 
 /* For Tablet */
-@media screen and (min-width: 480px) {}
-
+@media screen and (min-width: 480px) {
+    #all-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
 /* For Desktop */
-@media screen and (min-width: 769px) {}
+@media screen and (min-width: 769px) {
+    #all-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

@@ -11,7 +11,9 @@ const $power = $('#power')
 const $toughness = $('#toughness')
 const $image = $('#image')
 const $getPack = $('#get-pack')
-const $card = $('#card')
+const card = $('.card')
+
+card.css("grid-area",)
 
 let cardDatabase
 
