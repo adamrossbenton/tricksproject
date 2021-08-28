@@ -17,7 +17,9 @@ let cardData
 
 const render = () => {
     for (let i = 0; i < 15; i++) {
-        console.log(cardData.cards[Math.floor(Math.random()*100)]);
+        let rando = cardData.cards[Math.floor(Math.random()*100)]
+        console.log(rando.name);
+        $(`#${i+1}`).text(rando.name)
     }
 }
 
@@ -39,4 +41,4 @@ function handleGetData(){
 
 handleGetData()
 
-// $pack.on('click',function() {console.log("click works")})
+// $pack.on('click',handleGetData)
