@@ -12,7 +12,7 @@ h1 {
     font-size: 50px;
 }
 
-#all-cards {
+#pack-results {
     text-align: center;
 }
 
@@ -23,7 +23,7 @@ h1 {
 
 /* For Tablet */
 @media screen and (min-width: 480px) {
-    #all-cards {
+    #pack-results {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -37,7 +37,7 @@ h1 {
         align-items: center;
     }
     
-    #all-cards {
+    #pack-results {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
