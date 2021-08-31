@@ -1,15 +1,6 @@
 // API: https://api.magicthegathering.io/v1/cards
 // Total pages: 612
 
-// const $name = $('#name')
-// const $manaCost = $('#mana-cost')
-// const $colors = $('#colors')
-// const $type = $('#types')
-// const $subtype = $('#subtypes')
-// const $rarity = $('#rarity')
-// const $text = $('#text')
-// const $power = $('#power')
-// const $toughness = $('#toughness')
 const $image = $('#image')
 const $pack = $('#pack')
 
@@ -20,10 +11,7 @@ let randCard
 const render = () => {
     for (let i = 0; i < 15; i++) {
         randCard = cardData.cards[Math.floor(Math.random()*100)]
-        // console.log(cardData.cards[0].name)
-        // console.log(randCard.name)
-        $(`#${i+1}`).html(`${randCard.name}<img src="${randCard.imageUrl}>"`)
-        // $(`#img${i+1}`).attr("src",randCard.imageUrl)
+        $(`#${i+1}`).html(`${randCard.name}<img src="${randCard.imageUrl}">`)
     }
 }
 
@@ -44,6 +32,4 @@ function handleGetData(event){
     )
 }
 
-// handleGetData()
-console.log($pack)
 $pack.on('click',handleGetData)
