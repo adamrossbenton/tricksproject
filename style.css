@@ -1,4 +1,5 @@
 body {
+    font-family: 'Uncial Antiqua', cursive;
     background-image: url(https://scg-static.starcitygames.com/articles/2020/06/9f81fb24-164.jpg);
     color: white;
     display: flex;
@@ -8,13 +9,22 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 50px;
+}
+
 #header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #all-cards {
     text-align: center;
+}
+
+.contain {
+    background-color: rgba(161,115,115,0.5)
 }
 
 /* For Tablet */
