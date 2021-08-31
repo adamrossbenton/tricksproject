@@ -5,7 +5,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* align-items: center; */
     text-align: center;
 }
 
@@ -13,18 +12,13 @@ h1 {
     font-size: 50px;
 }
 
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #all-cards {
     text-align: center;
 }
 
 .contain {
-    background-color: rgba(161,115,115,0.5)
+    background-color: rgba(161,115,115,0.5);
+    background-image: linear-gradient(rgba(161,115,115,0.6),rgba(0,0,0,0.8))
 }
 
 /* For Tablet */
@@ -37,6 +31,12 @@ h1 {
 }
 /* For Desktop */
 @media screen and (min-width: 769px) {
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
     #all-cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
