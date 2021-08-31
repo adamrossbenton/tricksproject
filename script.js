@@ -22,8 +22,8 @@ const render = () => {
         randCard = cardData.cards[Math.floor(Math.random()*100)]
         // console.log(cardData.cards[0].name)
         // console.log(randCard.name)
-        $(`#${i+1}`).text(randCard.name)
-        $(`#img${i+1}`).attr("src",randCard.imageUrl)
+        $(`#${i+1}`).html(`${randCard.name}<img src="${randCard.imageUrl}>"`)
+        // $(`#img${i+1}`).attr("src",randCard.imageUrl)
     }
 }
 
@@ -45,5 +45,5 @@ function handleGetData(event){
 }
 
 // handleGetData()
-
-// $pack.on('click',handleGetData)
+console.log($pack)
+$pack.on('click',handleGetData)
