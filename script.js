@@ -11,7 +11,7 @@ let randCard
 const render = () => {
     for (let i = 0; i < 15; i++) {
         randCard = cardData.cards[Math.floor(Math.random()*100)]
-        $(`#${i+1}`).html(`${randCard.name}<img src="${randCard.imageUrl}">`)
+        $(`#${i+1}`).html(`${randCard.name}<img src="${randCard.imageUrl}" id="img${i+1}">`)
     }
 }
 
