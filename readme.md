@@ -5,7 +5,7 @@ That's ok, me too!
 
 That's why I've created Tricks: the Meeting!
 
-This is a MtG pack-opening simulator that utilizes a comprehensive card database API to generate random 15-card "packs" using the API found right here: https://docs.magicthegathering.io/
+This is a MtG pack-opening simulator, designed to recreate the experience of being the only one in your friend group that's into Magic. It utilizes a comprehensive card database API to generate random 15-card "packs" using the API found right here: https://docs.magicthegathering.io/
 
 FEATURES:
 

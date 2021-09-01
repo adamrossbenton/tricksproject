@@ -10,34 +10,27 @@ let randCard
 
 const render = () => {
     for (let i = 0; i < 15; i++) {
+        // Display newly acquired card
         randCard = cardData.cards[Math.floor(Math.random()*100)]
         $(`#${i+1}`).html(`${randCard.name}<br /><img src="${randCard.imageUrl}" class="card-img" id="img${i+1}">`)
-        // Trying to add card to library
+        // Add card to library
         if (randCard.colorIdentity === undefined) {
             console.log("This card is colorless")
-            console.log(randCard.name)
             $('#l-cls').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("W")) {
             console.log("This card is white")
-            // const pWhi = document.createElement("p")
-            //     pWhi.textContent = randCard.name
-            console.log(randCard.name)
             $('#l-whi').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("U")) {
             console.log("This card is blue")
-            console.log(randCard.name)
             $('#l-blu').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("B")) {
             console.log("This card is black")
-            console.log(randCard.name)
             $('#l-blk').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("R")) {
             console.log("This card is red")
-            console.log(randCard.name)
             $('#l-red').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("G")) {
             console.log("This card is green")
-            console.log(randCard.name)
             $('#l-grn').append(`<p>${randCard.name}</p>`)
         } else {
             console.log("Error")
@@ -47,8 +40,11 @@ const render = () => {
 
 function handleGetData(event){
     event.preventDefault();
+    // Call random page of MtG API
+    // Currently, this draws 15 randos from the same API page
+    // I don't yet see a way to do this for each card (true random)
     randPage = Math.floor((Math.random()*612)+1)
-    console.log(randPage)
+    console.log(`API page ${randPage}`)
     $.ajax({
         url: `https://api.magicthegathering.io/v1/cards?page=${randPage}`
     }).then(
@@ -62,4 +58,6 @@ function handleGetData(event){
     )
 }
 
+// "Get Pack" button generates random pack
+// New cards are displayed in Pacquisition and added to Library
 $pack.on('click',handleGetData)
