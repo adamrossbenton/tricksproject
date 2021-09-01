@@ -21,14 +21,24 @@ const render = () => {
             $('#l-whi').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("U")) {
             console.log("This card is blue")
+            console.log(randCard.name)
+            $('#l-blu').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("B")) {
             console.log("This card is black")
+            console.log(randCard.name)
+            $('#l-blk').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("R")) {
             console.log("This card is red")
+            console.log(randCard.name)
+            $('#l-red').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("G")) {
             console.log("This card is green")
+            console.log(randCard.name)
+            $('#l-grn').append(`<p>${randCard.name}</p>`)
         } else {
             console.log("This card is colorless")
+            console.log(randCard.name)
+            $('#l-cls').append(`<p>${randCard.name}</p>`)
         }
     }
 }
