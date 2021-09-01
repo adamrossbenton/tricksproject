@@ -15,6 +15,21 @@ h1 {
     font-size: 50px;
 }
 
+#pacquisition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pack-button {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Uncial Antiqua', cursive;
+}
+
 #pack-results {
     text-align: center;
 }

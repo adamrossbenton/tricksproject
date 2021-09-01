@@ -3,7 +3,8 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +23,10 @@
     <h2>CHOOSE YOUR PACK</h2>
     <h4>...well, I mean it's random, so you're not really CHOOSING, per se.</h4>
     <div class="contain" id="card-getter">
-        <h3>Pack Acquisition (Pacquisition?)</h3>
-        <button id="pack">Get Pack</button>
+        <div id="pacquisition">
+            <h3>Pack Acquisition (Pacquisition?)</h3>
+            <button id="pack-button">Get Pack</button>
+        </div>
         <div id="pack-results">
             <div class="card" id="1"></div>
             <div class="card" id="2"></div>
@@ -47,7 +50,7 @@
     <div class="contain">
         <div class="dropdown">
             <h3>Library</h3>
-            <button class="drop-button">v</button>
+            <button class="drop-button" id="drop-library">v</button>
         </div>
         <div class="drop-contents" id="lib-cards">
             <div class="column-contain" id="l-whi">WHITE</div>
@@ -62,7 +65,7 @@
     <div class="contain">
         <div class="dropdown">
                 <h3>Deck Builder</h3>
-                <button class="drop-button">v</button>
+                <button class="drop-button" id="drop-deck">v</button>
         </div>
         <div class="drop-contents" id="deck-content">
             <div class="column-contain" id="d-whi">WHITE</div>

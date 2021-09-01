@@ -2,7 +2,7 @@
 // Total pages: 612
 
 const $image = $('#image')
-const $pack = $('#pack')
+const $pack = $('#pack-button')
 
 let cardData
 let randPage
