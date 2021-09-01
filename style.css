@@ -69,6 +69,11 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
 }
 
+.column-contain {
+    display: none;
+    overflow: hidden;
+}
+
 #l-whi {
     background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.5))
 }
