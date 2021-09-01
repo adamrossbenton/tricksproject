@@ -19,6 +19,12 @@ h1 {
     text-align: center;
 }
 
+.card-img {
+    width: 250px;
+    height: 350px;
+
+}
+
 .contain {
     background-color: rgba(161,115,115,0.5);
     background-image: linear-gradient(rgba(161,115,115,0.6),rgba(0,0,0,0.8))
