@@ -13,7 +13,11 @@ const render = () => {
         randCard = cardData.cards[Math.floor(Math.random()*100)]
         $(`#${i+1}`).html(`${randCard.name}<br /><img src="${randCard.imageUrl}" class="card-img" id="img${i+1}">`)
         // Trying to add card to library
-        if (randCard.colorIdentity.includes("W")) {
+        if (randCard.colorIdentity === undefined) {
+            console.log("This card is colorless")
+            console.log(randCard.name)
+            $('#l-cls').append(`<p>${randCard.name}</p>`)
+        } else if (randCard.colorIdentity.includes("W")) {
             console.log("This card is white")
             // const pWhi = document.createElement("p")
             //     pWhi.textContent = randCard.name
@@ -36,9 +40,7 @@ const render = () => {
             console.log(randCard.name)
             $('#l-grn').append(`<p>${randCard.name}</p>`)
         } else {
-            console.log("This card is colorless")
-            console.log(randCard.name)
-            $('#l-cls').append(`<p>${randCard.name}</p>`)
+            console.log("Error")
         }
     }
 }
