@@ -30,7 +30,24 @@ h1 {
     background-image: linear-gradient(rgba(161,115,115,0.6),rgba(0,0,0,0.8))
 }
 
-#lib-cards {
+.drop-button {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-contain {
+    visibility: hidden;
+}
+
+.drop-contents {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr
 }
