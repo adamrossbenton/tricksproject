@@ -68,7 +68,25 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
 }
 
+#l-whi {
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.5))
+}
 
+#l-blu {
+    background-image: linear-gradient(rgba(61,133,255,0),rgba(61,133,255,0.5))
+}
+
+#l-blk {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5))
+}
+
+#l-red {
+    background-image: linear-gradient(rgba(225,50,0,0),rgba(225,50,0,0.5))
+}
+
+#l-grn {
+    background-image: linear-gradient(rgba(0,150,0,0),rgba(0,150,0,0.5))
+}
 
 /* For Tablet */
 @media screen and (min-width: 480px) {
