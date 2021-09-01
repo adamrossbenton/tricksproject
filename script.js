@@ -12,25 +12,26 @@ const render = () => {
     for (let i = 0; i < 15; i++) {
         // Display newly acquired card
         randCard = cardData.cards[Math.floor(Math.random()*100)]
-        $(`#${i+1}`).html(`${randCard.name}<br /><img src="${randCard.imageUrl}" class="card-img" id="img${i+1}">`)
+        console.log(randCard.imageUrl)
+        // Trying to get image error to display a 404 image
+        if (randCard.imageUrl === undefined) {
+            console.log("randCard.imageUrl is undefined")
+            $(`#${i+1}`).html(`${randCard.name}<br /><img src="https://i.imgur.com/4cknkDZ.jpeg" class="card-img" id="img${i+1}">`)
+        } else {
+            $(`#${i+1}`).html(`${randCard.name}<br /><img src="${randCard.imageUrl}" class="card-img" id="img${i+1}">`)
+        }
         // Add card to library
         if (randCard.colorIdentity === undefined) {
-            console.log("This card is colorless")
             $('#l-cls').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("W")) {
-            console.log("This card is white")
             $('#l-whi').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("U")) {
-            console.log("This card is blue")
             $('#l-blu').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("B")) {
-            console.log("This card is black")
             $('#l-blk').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("R")) {
-            console.log("This card is red")
             $('#l-red').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("G")) {
-            console.log("This card is green")
             $('#l-grn').append(`<p>${randCard.name}</p>`)
         } else {
             console.log("Error")
