@@ -1,6 +1,9 @@
 body {
     font-family: 'Uncial Antiqua', cursive;
     background-image: url(https://scg-static.starcitygames.com/articles/2020/06/9f81fb24-164.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
     display: flex;
     flex-direction: column;
@@ -19,6 +22,11 @@ h1 {
 .contain {
     background-color: rgba(161,115,115,0.5);
     background-image: linear-gradient(rgba(161,115,115,0.6),rgba(0,0,0,0.8))
+}
+
+#lib-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
 }
 
 /* For Tablet */
