@@ -15,6 +15,10 @@ const render = () => {
         // Trying to add card to library
         if (randCard.colorIdentity.includes("W")) {
             console.log("This card is white")
+            // const pWhi = document.createElement("p")
+            //     pWhi.textContent = randCard.name
+            console.log(randCard.name)
+            $('#l-whi').append(`<p>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("U")) {
             console.log("This card is blue")
         } else if (randCard.colorIdentity.includes("B")) {
