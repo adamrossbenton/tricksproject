@@ -3,6 +3,7 @@
 
 const $image = $('#image')
 const $pack = $('#pack-button')
+const drop = $('.drop-button')
 
 let cardData
 let randPage
@@ -62,3 +63,18 @@ function handleGetData(event){
 // "Get Pack" button generates random pack
 // New cards are displayed in Pacquisition and added to Library
 $pack.on('click',handleGetData)
+
+// Make library & deck builder collapsible
+// Citation: https://www.w3schools.com/howto/howto_js_collapsible.asp
+
+for (let i = 0; i < drop.length; i++) {
+    drop[i].on("click", () => {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    })
+}
