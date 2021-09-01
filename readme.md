@@ -3,9 +3,7 @@ TRICKS: THE MEETING
 Do you really like Magic: the Gathering, but you're too poor to buy five thousand cards every week?
 That's ok, me too!
 
-That's why I've created Tricks: the Meeting!
-
-This is a MtG pack-opening simulator, designed to recreate the experience of being the only one in your friend group that's into Magic. It utilizes a comprehensive card database API to generate random 15-card "packs" using the API found right here: https://docs.magicthegathering.io/
+TRICKS: THE MEETING is a MtG pack-opening simulator, designed to recreate the experience of being the only one in your friend group that's into Magic. It utilizes a comprehensive card database API to generate random 15-card "packs" using the API found right here: https://docs.magicthegathering.io/
 
 FEATURES:
 
