@@ -30,6 +30,10 @@ h1 {
     font-family: 'Uncial Antiqua', cursive;
 }
 
+#pack-hide {
+    display: none;
+}
+
 #pack-results {
     text-align: center;
 }

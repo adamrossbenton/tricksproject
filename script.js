@@ -7,10 +7,13 @@ const $pack = $('#pack-button')
 const $dropLibButton = $("#drop-library")
 const $dropLibContents = $('.drop-lib')
 const $libElement = $('.lib-element')
+const $packHide = $('#pack-hide')
 
 let cardData
 let randPage
 let randCard
+
+let firstPackOpen = false
 
 const render = () => {
     for (let i = 0; i < 15; i++) {
@@ -40,6 +43,10 @@ const render = () => {
         } else {
             console.log("Error")
         }
+    }
+    if (!firstPackOpen) {
+        $packHide.toggle(400,() => {})
+        firstPackOpen = true
     }
 }
 
