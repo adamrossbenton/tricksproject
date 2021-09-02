@@ -3,7 +3,8 @@
 
 const $image = $('#image')
 const $pack = $('#pack-button')
-const drop = $('.drop-button')
+const $dropLibButton = $("#drop-library")
+const $dropLibContents = $('#lib-cards')
 
 let cardData
 let randPage
@@ -65,16 +66,8 @@ function handleGetData(event){
 $pack.on('click',handleGetData)
 
 // Make library & deck builder collapsible
-// Citation: https://www.w3schools.com/howto/howto_js_collapsible.asp
 
-for (let i = 0; i < drop.length; i++) {
-    drop[i].on("click", () => {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    })
-}
+let dropLibTog = false
+$dropLibButton.click(() => {
+    $dropLibContents.toggle(400,() => {})
+})

@@ -70,7 +70,7 @@ h1 {
 }
 
 .column-contain {
-    display: none;
+    display: hidden;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
