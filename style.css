@@ -28,6 +28,7 @@ h1 {
     color: white;
     font-weight: bolder;
     font-family: 'Uncial Antiqua', cursive;
+    cursor: pointer;
 }
 
 #pack-hide {
@@ -68,11 +69,6 @@ h1 {
     visibility: hidden;
 } */
 
-.drop-contents {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
-}
-
 .drop-lib {
     display: none;
     /* overflow: hidden;
@@ -106,6 +102,12 @@ h1 {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
+
+    .drop-contents {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 /* For Desktop */
 @media screen and (min-width: 769px) {
@@ -121,4 +123,10 @@ h1 {
         grid-template-rows: 1fr 1fr 1fr;
         justify-content: space-between;
     }
+
+    .drop-contents {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+    }
+    
 }
