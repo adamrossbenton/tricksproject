@@ -69,10 +69,10 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
 }
 
-.column-contain {
-    display: hidden;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+.drop-lib {
+    display: none;
+    /* overflow: hidden;
+    transition: max-height 0.2s ease-out; */
 }
 
 #l-whi {

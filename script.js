@@ -4,7 +4,7 @@
 const $image = $('#image')
 const $pack = $('#pack-button')
 const $dropLibButton = $("#drop-library")
-const $dropLibContents = $('#lib-cards')
+const $dropLibContents = $('.drop-lib')
 
 let cardData
 let randPage
@@ -67,7 +67,6 @@ $pack.on('click',handleGetData)
 
 // Make library & deck builder collapsible
 
-let dropLibTog = false
 $dropLibButton.click(() => {
     $dropLibContents.toggle(400,() => {})
 })
