@@ -1,10 +1,12 @@
 // API: https://api.magicthegathering.io/v1/cards
 // Total pages: 612
+// Dead Link Img: https://cdn.dribbble.com/users/30669/screenshots/509689/media/71e4a38d13e4c595ae26f83521b92649.png?compress=1&resize=400x300
 
 const $image = $('#image')
 const $pack = $('#pack-button')
 const $dropLibButton = $("#drop-library")
 const $dropLibContents = $('.drop-lib')
+const $libElement = $('.lib-element')
 
 let cardData
 let randPage
@@ -18,23 +20,23 @@ const render = () => {
         // Trying to get image error to display a 404 image
         if (randCard.imageUrl === undefined) {
             console.log("randCard.imageUrl is undefined")
-            $(`#${i+1}`).html(`${randCard.name}<br /><img src="https://i.imgur.com/4cknkDZ.jpeg" class="card-img" id="img${i+1}">`)
+            $(`#${i+1}`).html(`${randCard.name}<br /><img src="https://cdn.dribbble.com/users/30669/screenshots/509689/media/71e4a38d13e4c595ae26f83521b92649.png?compress=1&resize=400x300" class="card-img" id="img${i+1}">`)
         } else {
             $(`#${i+1}`).html(`${randCard.name}<br /><img src="${randCard.imageUrl}" class="card-img" id="img${i+1}">`)
         }
         // Add card to library
         if (randCard.colorIdentity === undefined) {
-            $('#l-cls').append(`<p>${randCard.name}</p>`)
+            $('#l-cls').append(`<p class="lib-element>${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("W")) {
-            $('#l-whi').append(`<p>${randCard.name}</p>`)
+            $('#l-whi').append(`<p class="lib-element">${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("U")) {
-            $('#l-blu').append(`<p>${randCard.name}</p>`)
+            $('#l-blu').append(`<p class="lib-element">${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("B")) {
-            $('#l-blk').append(`<p>${randCard.name}</p>`)
+            $('#l-blk').append(`<p class="lib-element">${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("R")) {
-            $('#l-red').append(`<p>${randCard.name}</p>`)
+            $('#l-red').append(`<p class="lib-element">${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("G")) {
-            $('#l-grn').append(`<p>${randCard.name}</p>`)
+            $('#l-grn').append(`<p class="lib-element">${randCard.name}</p>`)
         } else {
             console.log("Error")
         }
@@ -69,4 +71,11 @@ $pack.on('click',handleGetData)
 
 $dropLibButton.click(() => {
     $dropLibContents.toggle(400,() => {})
+})
+
+// Hover over library cards for card info
+$libElement.hover(() => {
+
+},() => {
+
 })
