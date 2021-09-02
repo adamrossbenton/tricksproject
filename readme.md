@@ -3,15 +3,15 @@ TRICKS: THE MEETING
 Do you really like Magic: the Gathering, but you're too poor to buy five thousand cards every week?
 That's ok, me too!
 
-TRICKS: THE MEETING is a MtG pack-opening simulator, designed to almost perfectly recreate the experience of being the only one in your friend group that's into Magic. It utilizes a comprehensive card database API to generate random 15-card "packs" using the API found right here: https://docs.magicthegathering.io/
+TRICKS: THE MEETING is a MtG pack-opening simulator, designed to almost perfectly recreate the experience of being the only one in your friend group that's into Magic. It utilizes a comprehensive card database API to generate 15-card "packs" (using the API found right here: https://docs.magicthegathering.io/), displaying the card name and image (where applicable) by calling the necessary information from 15 randomly-selected cards from the API.
 
 FEATURES:
 
 * "Get Pack" button, generates 15 MtG cards at random
 
-(Currently jumps to a random page of API, from 1 to 612, then pulls 15 cards at random from one of the 100 cards on that page)
+Randomization currently jumps to a random page of API, from 1 to 612, then pulls 15 cards at random from one of the 100 cards on that page. Not quite perfect random and there is high probability of repeats within packs, but this could be analogous to IRL packs from a specific set/period of time (or at least that's how I'm justifying it to myself)
 
-* Add newly acquired cards to your library to save them for later--maybe show them off to your friends!
+* Newly-acquired cards are added to your library to save them for later--maybe show them off to your friends!
 
     "Check out my awesome new Black Lotus card, I got it for free online!"
 
