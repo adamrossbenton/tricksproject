@@ -13,7 +13,7 @@ FEATURES:
 
 * "Get Pack" button, generates 15 MtG cards at random
 
-Randomization currently jumps to a random page of API, from 1 to 612, then pulls 15 cards at random from one of the 100 cards on that page. Not quite perfect random and there is high probability of repeats within packs, but this could be analogous to IRL packs from a specific set/period of time (or at least that's how I'm justifying it to myself)
+    Randomization currently jumps to a random page of API, from 1 to 612, then pulls 15 cards at random from one of the 100 cards on that page. Not quite perfect random and there is high probability of repeats within packs, but this could be analogous to IRL packs from a specific set/period of time (or at least that's how I'm justifying it to myself)
 
 * Newly-acquired cards are added to your library to save them for later--maybe show them off to your friends!
 
