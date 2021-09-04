@@ -1,5 +1,9 @@
 TRICKS: THE MEETING
 
+Link: https://wonderful-jones-41570f.netlify.app/
+
+OVERVIEW:
+
 Do you really like Magic: the Gathering, but you're too poor to buy five thousand cards every week?
 That's ok, me too!
 
