@@ -33,17 +33,17 @@ COMING SOON:
 
 * Ask us to build a deck for you! Tell us what you want in a deck and we'll pull cards at random that fit your specifications
 
-Must choose:
-
-    Color type(s)
-
-Optional choices:
-
-    Creature type(s)
-
-    Ability(ies)
-
-We can't guarantee it will be a good deck, but again, at least you've got a deck!
+    Must choose:
+    
+        Color type(s)
+    
+    Optional choices:
+    
+        Creature type(s)
+    
+        Ability(ies)
+    
+    We can't guarantee it will be a good deck, but again, at least you've got a deck!
 
 HOW IT GOT HERE:
 
