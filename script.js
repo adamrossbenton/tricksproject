@@ -19,17 +19,17 @@ const render = () => {
     for (let i = 0; i < 15; i++) {
         // Display newly acquired card
         randCard = cardData.cards[Math.floor(Math.random()*100)]
-        console.log(randCard.imageUrl)
+        console.log(randCard.name)
+        console.log(randCard.colorIdentity === undefined)
         // Trying to get image error to display a 404 image
         if (randCard.imageUrl === undefined) {
-            console.log("randCard.imageUrl is undefined")
             $(`#${i+1}`).html(`${randCard.name}<br /><img src="https://cdn.dribbble.com/users/30669/screenshots/509689/media/71e4a38d13e4c595ae26f83521b92649.png?compress=1&resize=400x300" class="card-img" id="img${i+1}">`)
         } else {
             $(`#${i+1}`).html(`${randCard.name}<br /><img src="${randCard.imageUrl}" class="card-img" id="img${i+1}">`)
         }
         // Add card to library
         if (randCard.colorIdentity === undefined) {
-            $('#l-cls').append(`<p class="lib-element>${randCard.name}</p>`)
+            $('#l-cls').append(`<p class="lib-element">${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("W")) {
             $('#l-whi').append(`<p class="lib-element">${randCard.name}</p>`)
         } else if (randCard.colorIdentity.includes("U")) {

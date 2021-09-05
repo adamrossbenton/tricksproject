@@ -64,11 +64,6 @@ h1 {
     justify-content: space-between;
 }
 
-/* hide this until I add dropdown */
-/* .column-contain {
-    visibility: hidden;
-} */
-
 .drop-lib {
     display: none;
     /* overflow: hidden;
