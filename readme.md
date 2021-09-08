@@ -1,5 +1,7 @@
 TRICKS: THE MEETING
 
+It's Magic: the Gathering, but worse!
+
 Link: https://wonderful-jones-41570f.netlify.app/
 
 OVERVIEW:
