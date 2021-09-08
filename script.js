@@ -81,8 +81,8 @@ $dropLibButton.click(() => {
 })
 
 // Hover over library cards for card info
-$libElement.hover(() => {
+// $libElement.hover(() => {
 
-},() => {
+// },() => {
 
-})
+// })
