@@ -53,19 +53,19 @@ Using the information available to me within the API, I was able to implement a 
 
 TECHNOLOGIES USED:
 
-*HTML
+* HTML
 
-*CSS
+* CSS
 
-*JS
+* JS
 
-*JQuery
+* JQuery
 
-*AJAX
+* AJAX
 
-*Google Fonts
+* Google Fonts
 
-*magicthegathering.io API
+* magicthegathering.io API
 
 Some challenges I faced during the coding process:
 
