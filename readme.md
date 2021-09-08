@@ -67,6 +67,8 @@ TECHNOLOGIES USED:
 
 * magicthegathering.io API
 
+* hosted on Netlify
+
 Some challenges I faced during the coding process:
 
 * The API is not perfect--for some reason, a handful of pages do not contain a card image URL, which would give me a 404 for the card image portion of the Pacquisition. I found a way around this by replacing any instance of an "undefined" image URL with a funny "dead link" image shamelessly ripped from Imgur.
